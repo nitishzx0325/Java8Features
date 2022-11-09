@@ -13,6 +13,10 @@ public class IntroToFp1FunctionalWay {
                 .filter(n->n%2==0)  //lamda expression
                 .forEach(System.out::println);
     }
+    private static boolean check(Integer integer) {
+        System.out.println("Only Even number");
+        return integer%2==0;
+    }
 
     private static void printAllEvenNumber(List<Integer> integers) {
         integers.stream()
@@ -20,10 +24,7 @@ public class IntroToFp1FunctionalWay {
                 .forEach(IntroToFp1FunctionalWay::print);
     }
 
-    private static boolean check(Integer integer) {
-        System.out.println("Only Even number");
-        return integer%2==0;
-    }
+
 
 
     private static void print(int n){
